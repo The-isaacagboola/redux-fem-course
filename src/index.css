@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+main {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid gray;
+  height: 100vh;
+  background: linear-gradient(gray, white);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+main .count {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 2rem auto;
+}
+
+main .controls {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+main .controls button {
+  font-size: large;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.2s linear;
+}
+
+main .controls button:hover {
+  background: gray;
+  color: white;
+}
+.set-count label {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.set-count form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.set-count form input {
+  display: block;
+  padding: 10px;
+  font-size: 1rem;
+}
