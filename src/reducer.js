@@ -1,11 +1,10 @@
-import { INCREMENT, SET } from "./actions";
-import { DECREMENT } from "./actions";
+import * as actions from "./actions.js";
 
 export const initialState = { count: 0 };
 
 export const reducer = (state = initialState, action) => {
-  if (action.type === INCREMENT) return { count: state.count + 1 };
-  if (action.type === DECREMENT) return { count: state.count - 1 };
-  if (action.type === SET) return { count: action.payload };
+  if (action.type === actions.INCREMENT) return { count: state.count + 1 };
+  if (action.type === actions.DECREMENT) return { count: state.count - 1 };
+  if (action.type === actions.SET) return { count: action.payload };
   return state;
 };
