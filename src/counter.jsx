@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 
 import SetCounter from "./setCounter";
 import { useCounter } from "./use-counter";
-
+// import { RootState } from "./state/store";
 export const Counter = () => {
   const incident = "Incident";
   // const count = useSelector((state) => state.count);
@@ -16,7 +16,7 @@ export const Counter = () => {
 
   //lastly
   const { increment, decrement, set, count } = useCounter();
-
+  // const myCount = useSelector(state=> state.counter.count) ....cosden
   return (
     <main className="Counter">
       <h1>Days Since Last {incident}</h1>
